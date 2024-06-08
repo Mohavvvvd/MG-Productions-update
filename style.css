@@ -1,0 +1,286 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh; 
+    margin: 0;
+}
+
+#a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 350px;
+    max-height: 400px;
+    padding: 10px;
+    margin: auto;
+}
+
+.nav {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+ul li {
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.ac {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    gap: 10px;
+}
+
+.ac p {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+h1,
+h2,
+span {
+    color: white;
+}
+
+img {
+    width: auto;
+    max-height: 100%;
+}
+
+.btn {
+    margin: 0 auto;
+    width: auto;
+    height: 3rem;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to left, white 50%, rgb(0, 0, 0) 50%, rgb(66, 66, 65));
+    background-size: 200%;
+    background-position: 100%;
+    transition: all ease 0.6s;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.btn:hover span {
+    background-position: 0%;
+}
+
+.btn:hover {
+    background-position: 0%;
+}
+
+span {
+    background: linear-gradient(to right, white 50%, rgb(0, 0, 0) 50%, rgb(66, 66, 58));
+    background-size: 200%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all ease 0.6s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s linear 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 0s linear;
+}
+
+.contai {
+    max-width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.app {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 40px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.app:hover {
+    transform: scale(1.05);
+}
+
+.app h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.app a {
+    display: inline-block;
+    background-color: #666;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.app a:hover {
+    background-color: #0056b3;
+}
+
+.appli {
+    position: absolute;
+    top: 100px !important;
+    padding: 70px;
+    background-color: #000000;
+    text-align: center;
+}
+
+.s h2 {
+    top: 0;
+    margin: auto;
+}
+
+.cont {
+    position: absolute;
+    margin-top: 100px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    gap: 5px;
+}
+
+.cont img.logo {
+    max-width: 100%; 
+    max-height: 200px; 
+    margin: auto;
+}
+
+.cont h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cont p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cont a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cont a:hover {
+    text-decoration: underline;
+}
+
+.soc {
+    margin-top: 20px;
+}
+
+.soc a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.soc img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.btv {
+    background-color: black;
+    border: none;
+    color: #f4f4f4;
+    transition: all ease 0.3s;
+}
+
+.btv:hover {
+    color: #0056b3;
+}
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+    .contai {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .app {
+        width: 100%; 
+    }
+
+}
