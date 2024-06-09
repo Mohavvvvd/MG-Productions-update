@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             element.classList.add('visible');
         }
     });
-    var scrol = document.querySelectorAll(".btv");
+    var scrol = document.querySelectorAll(".x");
     scrol.forEach(function(button) {
         button.addEventListener("click", function() {
             window.scrollTo({
